@@ -31,10 +31,11 @@ public class Main {
         ParkingLot parkingLot = new ParkingLot(parkingFloors);
         parkingLot.displayParkingLot();
 
-        Vehicle vehicle1 = new Bike("MP07", new BasicHourlyRateStrategy());
-        Vehicle vehicle2 = new Bike("MP08", new BasicHourlyRateStrategy());
-        Vehicle vehicle3 = new Car("RJ17", new PremiumRateStrategy());
-        Vehicle vehicle4 = new Truck("RJ19", new BasicHourlyRateStrategy());
+        VehicleFactory vehicleFactory = new VehicleFactory();
+        Vehicle vehicle1 = vehicleFactory.createVehicle("MP07", "Bike", new BasicHourlyRateStrategy());
+        Vehicle vehicle2 = vehicleFactory.createVehicle("MP08", "Bike", new BasicHourlyRateStrategy());
+        Vehicle vehicle3 = vehicleFactory.createVehicle("RJ17", "Car", new PremiumRateStrategy());
+        Vehicle vehicle4 = vehicleFactory.createVehicle("RJ19", "truck", new BasicHourlyRateStrategy());
 
         parkingLot.parkVehicle(vehicle1);
         parkingLot.displayParkingLot();
