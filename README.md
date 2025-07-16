@@ -1,1 +1,10 @@
+# Requirements:
+1. We should allocate vechicles to nearest parking spot going from the down floor to the top floor.
+2. If a parking spot is occupied, we should allocate the next nearest available parking spot.
+3. If all parking spots on a floor are occupied, we should move to the next floor
+4. We should be able to accomdate different types of vehichles (eg. bike, car, truck) and allocate them to appropriate parking spots.
+5. Fare calculation should be based on the type of vehicle and the duration of parking.
+6. Payment can be made through various methods (cash, card, UPI).
+
+
 ![UML](https://github.com/user-attachments/assets/49fd6658-ff3e-4237-8c35-fa6c991727a7)
